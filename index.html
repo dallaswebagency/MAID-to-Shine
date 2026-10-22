@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MAID to Shine | House &amp; Office Cleaning in Sylvan Lake, AB</title>
+<link rel="icon" type="image/png" href="images/logo-icon.png">
 <meta name="description" content="Licensed and bonded house cleaning, move in and move out cleans, office cleaning, Airbnb turnovers and organizing in Sylvan Lake, Alberta. Serving the area since 2009. 100% satisfaction guaranteed.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,10 +55,10 @@ section{padding:84px 0}
 .topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .topbar b{color:var(--gold)}
 header.nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:92px}
 .logo{display:flex;align-items:center;gap:10px}
-.logo img{height:46px;width:auto}
-.logo-mark{display:none;width:44px;height:44px;border-radius:14px;background:var(--teal);place-items:center}
+.logo-img{height:72px;width:auto;display:block}
+.logo-mark{display:grid;width:44px;height:44px;border-radius:14px;background:var(--teal);place-items:center}
 .logo-text{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;line-height:1}
 .logo-text small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-top:4px;font-weight:700}
 .nav ul{display:flex;gap:30px;list-style:none;align-items:center}
@@ -212,6 +213,9 @@ footer ul{list-style:none;display:grid;gap:9px}
 footer a:hover{color:var(--gold)}
 .f-brand .logo-text{color:#fff;font-size:1.5rem;margin-bottom:12px}
 .f-brand p{max-width:320px}
+.f-logo{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.f-logo img{height:50px;width:auto;border-radius:12px}
+.f-logo .logo-text{margin:0}
 .copy{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem}
 
 /* mobile sticky bar */
@@ -244,7 +248,9 @@ footer a:hover{color:var(--gold)}
   .topbar .wrap{justify-content:center;text-align:center}
   .topbar .hide-m{display:none}
   .burger{display:block}
-  .nav ul{position:fixed;inset:76px 0 auto 0;background:var(--cream);flex-direction:column;gap:0;padding:8px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:.3s;box-shadow:0 20px 30px -20px rgba(0,0,0,.3);align-items:stretch}
+  .logo-img{height:56px}
+  .nav .wrap{height:80px}
+  .nav ul{position:fixed;inset:80px 0 auto 0;background:var(--cream);flex-direction:column;gap:0;padding:8px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:.3s;box-shadow:0 20px 30px -20px rgba(0,0,0,.3);align-items:stretch}
   .nav ul.open{transform:none;opacity:1;visibility:visible;pointer-events:auto}
   .nav ul li a{display:block;padding:15px 4px;border-bottom:1px solid var(--line);font-size:1.02rem}
   .nav ul li:last-child a{border:0;margin-top:14px;text-align:center}
@@ -309,9 +315,11 @@ footer a:hover{color:var(--gold)}
 <header class="nav">
   <div class="wrap">
     <a href="#top" class="logo" aria-label="MAID to Shine home">
-      <img src="images/logo.png" alt="MAID to Shine logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
-      <span class="logo-mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#f5b82e"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z"/></svg></span>
-      <span class="logo-text">MAID to Shine<small>Sylvan Lake, AB</small></span>
+      <img class="logo-img" src="images/logo.png" alt="MAID to Shine cleaning services, Sylvan Lake AB" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="logo-fb" style="display:none;align-items:center;gap:10px">
+        <span class="logo-mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#f5b82e"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z"/></svg></span>
+        <span class="logo-text">MAID to Shine<small>Sylvan Lake, AB</small></span>
+      </span>
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul id="menu">
@@ -663,7 +671,7 @@ footer a:hover{color:var(--gold)}
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <div class="logo-text">MAID to Shine</div>
+        <div class="f-logo"><img src="images/logo-icon.png" alt="" onerror="this.remove()"><span class="logo-text">MAID to Shine</span></div>
         <p>Licensed and bonded house and office cleaning, serving Sylvan Lake and area since 2009. Neat as can be, clean you can see.</p>
       </div>
       <div>
