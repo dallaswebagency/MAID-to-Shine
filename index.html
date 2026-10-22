@@ -90,7 +90,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);bac
 .s4{width:20px;height:20px;right:5%;bottom:34%;animation-delay:.6s}
 @keyframes tw{0%,100%{transform:scale(.75) rotate(0);opacity:.45}50%{transform:scale(1.15) rotate(22deg);opacity:1}}
 @media (prefers-reduced-motion:reduce){.spark{animation:none}}
-.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero-grid{position:relative;z-index:3;display:block}
+.hero-copy{max-width:600px}
 .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;padding:9px 18px;border-radius:999px;font-size:.84rem;font-weight:700;margin-bottom:24px;backdrop-filter:blur(6px)}
 .pill .i{color:var(--gold)}
 .hero h1{font-size:clamp(2.7rem,5.8vw,4.7rem);margin-bottom:22px;color:#fff}
@@ -102,22 +103,24 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);bac
 .hero-stats div{padding-right:28px;margin-right:28px;border-right:1px solid rgba(255,255,255,.22);font-size:.84rem;color:#cfeceb;line-height:1.35}
 .hero-stats div:last-child{border:0;margin:0;padding:0}
 .hero-stats b{display:block;font-family:'Fraunces',serif;font-size:2.3rem;color:var(--gold);line-height:1;margin-bottom:6px;font-weight:600}
-.hero-photo{position:relative;max-width:520px;width:100%;margin-left:auto}
-.hero-photo .ring{position:absolute;inset:-20px -22px 22px 22px;border-radius:270px 270px 44px 44px;border:3px solid var(--gold)}
-.hero-photo .frame{position:relative;aspect-ratio:4/5;border-radius:270px 270px 44px 44px;border:8px solid #fff;box-shadow:0 44px 80px -30px rgba(0,0,0,.65)}
-.hero-photo .frame img{object-position:42% 50%}
-.chip{position:absolute;z-index:3;background:#fff;color:var(--ink);border-radius:18px;padding:12px 18px 12px 12px;box-shadow:0 22px 44px -18px rgba(0,0,0,.5);display:flex;gap:12px;align-items:center;font-size:.8rem;line-height:1.3;font-weight:600}
-.chip b{display:block;font-size:.92rem}
-.chip .cic{width:42px;height:42px;border-radius:13px;background:var(--aqua);color:var(--teal);display:grid;place-items:center;flex:none}
-.chip .cic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-.c1{left:-46px;top:84px}
-.c3{right:-30px;top:44%;background:var(--gold)}
-.c3 .cic{background:#fff;color:var(--ink)}
-.c2{left:-34px;bottom:46px;display:block;max-width:250px;padding:16px 20px}
-.c2 .st{display:flex;gap:2px;color:var(--gold);margin-bottom:8px}
-.c2 .st .i{width:16px;height:16px}
-.c2 p{font-size:.86rem;line-height:1.4}
-.c2 small{display:block;color:var(--ink-soft);margin-top:6px;font-size:.76rem}
+.hero-photo{position:absolute;right:0;top:0;bottom:0;width:50%;z-index:1}
+.photo-bg,.photo-stripe{position:absolute;inset:0;clip-path:polygon(19% 0,100% 0,100% 100%,0 100%)}
+.photo-stripe{background:linear-gradient(180deg,var(--gold),#ffd56b);transform:translateX(-20px)}
+.photo-bg img{object-position:40% 50%}
+.photo-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,63,67,.35),transparent 35%)}
+.award-badge{position:absolute;z-index:3;top:64px;left:13%;width:134px;height:134px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;box-shadow:0 24px 44px -16px rgba(0,0,0,.55);border:4px solid #fff}
+.ring-t{position:absolute;inset:0;width:100%;height:100%;animation:spin 20s linear infinite;fill:var(--ink);font:800 10.2px 'Plus Jakarta Sans',sans-serif;letter-spacing:.04em}
+.award-badge .bc svg{width:42px;height:42px;fill:none;stroke:var(--ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.ring-t{animation:none}}
+.bubble{position:absolute;z-index:3;border-radius:50%;border:6px solid #fff;box-shadow:0 26px 46px -18px rgba(0,0,0,.6)}
+.b-a{width:168px;height:168px;left:-34px;top:54%}
+.b-b{width:116px;height:116px;left:112px;top:calc(54% + 128px)}
+.rate{position:absolute;z-index:3;right:44px;bottom:120px;background:#fff;color:var(--ink);border-radius:18px;padding:14px 18px;max-width:240px;box-shadow:0 22px 44px -18px rgba(0,0,0,.5)}
+.rate .st{display:flex;gap:2px;color:var(--gold);margin-bottom:6px}
+.rate .st .i{width:15px;height:15px}
+.rate p{font-size:.86rem;font-weight:700;line-height:1.4}
+.rate small{display:block;color:var(--ink-soft);margin-top:5px;font-size:.74rem;font-weight:600}
 
 /* quick quote bar */
 .quickbar{position:relative;z-index:5;margin-top:-80px;padding-bottom:36px}
@@ -243,7 +246,14 @@ footer a:hover{color:var(--gold)}
 @media (max-width:1020px){
   section{padding:68px 0}
   .hero-grid{grid-template-columns:1fr;gap:56px}
-  .hero-photo{max-width:470px;margin-inline:auto}
+  .hero{padding-bottom:0}
+  .hero-photo{position:relative;right:auto;top:auto;bottom:auto;width:100%;height:480px;margin-top:56px}
+  .photo-bg,.photo-stripe{clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}
+  .photo-stripe{transform:translateY(-14px)}
+  .award-badge{left:auto;right:28px;top:-34px;width:116px;height:116px}
+  .b-a{left:28px;top:auto;bottom:120px;width:124px;height:124px}
+  .b-b{display:none}
+  .rate{right:28px;bottom:100px}
   .qb{grid-template-columns:1fr 1fr}
   .qb .btn{grid-column:span 2}
   .svc-grid,.tgrid,.why-grid{grid-template-columns:repeat(2,1fr)}
@@ -268,19 +278,19 @@ footer a:hover{color:var(--gold)}
   .nav ul li a{display:block;padding:15px 4px;border-bottom:1px solid var(--line);font-size:1.02rem}
   .nav ul li:last-child a{border:0;margin-top:14px;text-align:center}
   .nav .btn-nav{display:none}
-  .hero{padding:44px 0 112px}
+  .hero{padding:44px 0 0}
   .hero-cta .btn{width:100%}
   .hero-stats{margin-top:30px;padding-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
   .hero-stats div{padding-right:12px;margin-right:12px}
   .hero-stats b{font-size:1.7rem}
-  .hero-photo{max-width:360px}
-  .hero-photo .ring{inset:-14px -12px 14px 12px}
-  .chip{padding:9px 12px 9px 9px;font-size:.74rem}
-  .chip b{font-size:.82rem}
-  .chip .cic{width:34px;height:34px;border-radius:10px}
-  .c1{left:-10px;top:56px}
-  .c3{display:none}
-  .c2{left:-8px;bottom:26px;max-width:200px;padding:12px 14px}
+  .hero-photo{height:390px;margin-top:40px}
+  .award-badge{width:96px;height:96px;top:-26px;right:16px}
+  .ring-t{font-size:10.6px}
+  .award-badge .bc svg{width:32px;height:32px}
+  .b-a{width:92px;height:92px;left:16px;bottom:104px;border-width:5px}
+  .rate{display:none}
+  .photo-bg img{object-position:42% 58%}
+  .s1{display:none}
   .s1{display:none}
   .s2,.s3{display:none}
   .quickbar{margin-top:-64px}
@@ -375,16 +385,20 @@ footer a:hover{color:var(--gold)}
         <div><b>100%</b>satisfaction<br>guaranteed</div>
       </div>
     </div>
-    <div class="hero-photo">
-      <div class="ring"></div>
-      <div class="frame ph"><img src="images/hero-main.jpg" alt="Smiling MAID to Shine cleaner wiping a coffee table in a bright living room" onerror="this.remove()"></div>
-      <div class="chip c1"><span class="cic"><svg><use href="#i-shield"/></svg></span><div><b>Licensed &amp; Bonded</b>Every cleaner signs a<br>confidentiality agreement</div></div>
-      <div class="chip c3"><span class="cic"><svg><use href="#i-clock"/></svg></span><div><b>Free re-clean</b>within 24 hours</div></div>
-      <div class="chip c2">
-        <div class="st"><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg></div>
-        <p>"Every clean feels like a deep clean."</p>
-        <small>Matthew S., Sylvan Lake client</small>
-      </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-stripe"></div>
+    <div class="photo-bg ph"><img src="images/hero-main.jpg" alt="Smiling MAID to Shine cleaner wiping a coffee table in a bright living room" onerror="this.remove()"></div>
+    <div class="award-badge">
+      <svg class="ring-t" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="ringpath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#ringpath" textLength="283" lengthAdjust="spacing">AWARD WINNING • SINCE 2009 • SYLVAN LAKE • </textPath></text></svg>
+      <span class="bc"><svg viewBox="0 0 24 24"><use href="#i-trophy"/></svg></span>
+    </div>
+    <div class="bubble b-a ph"><img src="images/hero-2.jpg" alt="Sparkling clean kitchen counter" onerror="this.remove()"></div>
+    <div class="bubble b-b ph"><img src="images/hero-3.jpg" alt="Fresh folded towels on a made bed" onerror="this.remove()"></div>
+    <div class="rate">
+      <div class="st"><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg><svg class="i i-fill"><use href="#i-star"/></svg></div>
+      <p>"Every clean feels like a deep clean."</p>
+      <small>Matthew S., Sylvan Lake client</small>
     </div>
   </div>
 </section>
