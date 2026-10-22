@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAID to Shine | House &amp; Office Cleaning in Sylvan Lake, AB</title>
+<meta name="description" content="Licensed and bonded house cleaning, move in and move out cleans, office cleaning, Airbnb turnovers and organizing in Sylvan Lake, Alberta. Serving the area since 2009. 100% satisfaction guaranteed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#10343a;
+  --ink-soft:#4a6469;
+  --teal:#0e8b8f;
+  --teal-dark:#0a6468;
+  --aqua:#e4f5f4;
+  --gold:#f5b82e;
+  --gold-dark:#d99a0f;
+  --cream:#fbf9f4;
+  --white:#fff;
+  --line:#dfe9e8;
+  --radius:22px;
+  --shadow:0 18px 45px -18px rgba(16,52,58,.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;font-weight:600;letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:84px 0}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.sec-head{max-width:640px;margin-bottom:46px}
+.sec-head h2{font-size:clamp(2rem,4.2vw,3rem);margin-bottom:14px}
+.sec-head p{color:var(--ink-soft);font-size:1.05rem}
+.center{text-align:center;margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:700;font-size:.98rem;border:2px solid transparent;cursor:pointer;transition:.25s;font-family:inherit}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 10px 24px -10px rgba(217,154,15,.7)}
+.btn-gold:hover{background:var(--gold-dark);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-dark);transform:translateY(-2px)}
+
+/* image placeholders: gradient shows until your image is added */
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#bfe7e5,#e9f7f5 55%,#fbe9b5)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* header */
+.topbar{background:var(--ink);color:#d6ecec;font-size:.84rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar b{color:var(--gold)}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:46px;width:auto}
+.logo-mark{display:none;width:44px;height:44px;border-radius:14px;background:var(--teal);place-items:center}
+.logo-text{font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;line-height:1}
+.logo-text small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-top:4px;font-weight:700}
+.nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+.nav ul a{font-weight:600;font-size:.95rem;color:var(--ink-soft);transition:.2s}
+.nav ul a:hover{color:var(--teal)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px auto;border-radius:3px;transition:.3s}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(160deg,#0a5a5e 0%,#0e8b8f 55%,#16a6a2 100%);color:#fff;padding:70px 0 96px;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(245,184,46,.28),transparent 65%)}
+.hero:before{width:520px;height:520px;right:-140px;top:-160px}
+.hero:after{width:380px;height:380px;left:-120px;bottom:-160px;background:radial-gradient(circle,rgba(255,255,255,.14),transparent 65%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:8px 16px;border-radius:999px;font-size:.84rem;font-weight:600;margin-bottom:22px}
+.pill i{color:var(--gold);font-style:normal}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p.lead{font-size:1.15rem;color:#dff3f2;max-width:520px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.hero-trust{display:flex;gap:26px;flex-wrap:wrap}
+.hero-trust div{font-size:.88rem;color:#cfeceb;line-height:1.35}
+.hero-trust b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:#fff;font-weight:600}
+.hero-media{position:relative}
+.hero-media .ph{aspect-ratio:3/4;border-radius:200px 200px 28px 28px;box-shadow:0 40px 70px -30px rgba(0,0,0,.5);border:6px solid rgba(255,255,255,.18)}
+.float{position:absolute;background:#fff;color:var(--ink);border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;font-size:.86rem;line-height:1.3}
+.float b{display:block;font-size:.95rem}
+.float .ic{width:42px;height:42px;border-radius:12px;background:var(--aqua);display:grid;place-items:center;font-size:1.2rem}
+.f1{left:-28px;bottom:70px}
+.f2{right:-14px;top:60px}
+
+/* awards */
+.awards{background:#fff;padding:26px 0;border-bottom:1px solid var(--line)}
+.awards .wrap{display:flex;flex-wrap:wrap;gap:14px 34px;justify-content:center;align-items:center}
+.awards span{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.92rem;color:var(--ink-soft)}
+.awards span i{font-style:normal;font-size:1.3rem}
+.awards .lbl{color:var(--teal);text-transform:uppercase;letter-spacing:.14em;font-size:.76rem}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 0 var(--line);border:1px solid var(--line);transition:.3s;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc .ph{aspect-ratio:4/3}
+.svc .body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.svc .tag{font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark)}
+.svc h3{font-size:1.45rem}
+.svc p{color:var(--ink-soft);font-size:.97rem}
+.svc a.more{margin-top:auto;padding-top:8px;font-weight:700;color:var(--teal);font-size:.92rem}
+.svc a.more:hover{color:var(--teal-dark)}
+.extras{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:26px}
+.extra{background:var(--aqua);border-radius:var(--radius);padding:28px;display:flex;gap:20px;align-items:flex-start;border:1px solid #cfe9e7}
+.extra .ic{flex:none;width:58px;height:58px;border-radius:16px;background:#fff;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 8px 18px -10px rgba(16,52,58,.4)}
+.extra h3{font-size:1.3rem;margin-bottom:6px}
+.extra p{color:var(--ink-soft);font-size:.96rem}
+
+/* why */
+.why{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.why .sec-head p{color:#a9c6c8}
+.why .eyebrow{color:var(--gold)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:32px 28px}
+.why-card .ic{width:56px;height:56px;border-radius:16px;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-size:1.6rem;margin-bottom:20px}
+.why-card h3{font-size:1.4rem;margin-bottom:10px}
+.why-card p{color:#b7d0d2;font-size:.97rem}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.about-media{position:relative}
+.about-media .ph{aspect-ratio:4/3;border-radius:var(--radius);box-shadow:var(--shadow)}
+.badge{position:absolute;right:-14px;bottom:-22px;background:var(--gold);color:var(--ink);border-radius:20px;padding:18px 24px;text-align:center;box-shadow:var(--shadow);font-weight:700;line-height:1.2}
+.badge b{display:block;font-family:'Fraunces',serif;font-size:2.4rem}
+.about h2{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:18px}
+.about p{color:var(--ink-soft);margin-bottom:16px}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin:22px 0 30px}
+.ticks li{display:flex;gap:10px;font-weight:600;font-size:.95rem}
+.ticks li:before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:.8rem}
+
+/* process */
+.process{background:var(--aqua)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:34px 28px;position:relative;border:1px solid #cfe9e7}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:'Fraunces',serif;font-size:3.2rem;color:var(--gold);line-height:1;display:block;margin-bottom:14px;font-weight:700}
+.step h3{font-size:1.35rem;margin-bottom:8px}
+.step p{color:var(--ink-soft);font-size:.97rem}
+
+/* testimonials */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--gold);letter-spacing:3px;font-size:1.05rem}
+.tcard h3{font-size:1.2rem}
+.tcard p{color:var(--ink-soft);font-size:.96rem}
+.who{margin-top:auto;display:flex;align-items:center;gap:12px;font-weight:700;font-size:.92rem}
+.who i{font-style:normal;width:40px;height:40px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:800}
+.tcard.big{grid-column:span 2;background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;border:0}
+.tcard.big p{color:#e0f4f3;font-size:1.04rem}
+.tcard.big .who i{background:var(--gold);color:var(--ink)}
+
+/* hero banner heroes */
+.hero-offer{padding:0 0 84px}
+.offer{background:linear-gradient(120deg,var(--gold),#ffd56b);border-radius:30px;padding:38px 44px;display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:var(--shadow)}
+.offer h3{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:6px}
+.offer p{max-width:640px;color:#4b3b0c}
+
+/* cta / contact */
+.cta{position:relative;color:#fff;padding:0}
+.cta .bg{position:absolute;inset:0;background:linear-gradient(150deg,#0a5a5e,#0e8b8f)}
+.cta .bg img{width:100%;height:100%;object-fit:cover;opacity:.28}
+.cta .wrap{position:relative;padding:90px 0;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.cta h2{font-size:clamp(2.1rem,4.4vw,3.2rem);margin-bottom:16px}
+.cta p{color:#d5efee;font-size:1.05rem;margin-bottom:26px;max-width:480px}
+.contact-list{list-style:none;display:grid;gap:14px}
+.contact-list li{display:flex;gap:14px;align-items:center;font-weight:600}
+.contact-list .ic{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:1.15rem}
+.form{background:#fff;color:var(--ink);border-radius:26px;padding:34px;box-shadow:0 30px 60px -25px rgba(0,0,0,.5)}
+.form h3{font-size:1.6rem;margin-bottom:6px}
+.form .sub{color:var(--ink-soft);font-size:.92rem;margin-bottom:20px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form label{display:block;font-size:.8rem;font-weight:700;margin-bottom:6px;color:var(--ink-soft)}
+.form input,.form select,.form textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:var(--cream);margin-bottom:14px;color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--teal);background:#fff}
+.form textarea{min-height:92px;resize:vertical}
+.form .btn{width:100%}
+.form .ok{display:none;text-align:center;font-weight:700;color:var(--teal);margin-top:12px}
+
+footer{background:var(--ink);color:#a9c6c8;padding:60px 0 26px;font-size:.93rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:38px}
+footer h4{color:#fff;font-family:'Fraunces',serif;font-size:1.15rem;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a:hover{color:var(--gold)}
+.f-brand .logo-text{color:#fff;font-size:1.5rem;margin-bottom:12px}
+.f-brand p{max-width:320px}
+.copy{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.84rem}
+
+/* mobile sticky bar */
+.mbar{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* tablet */
+@media (max-width:1020px){
+  section{padding:68px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .hero-media{max-width:420px;margin-inline:auto;width:100%}
+  .svc-grid,.tgrid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .tcard.big{grid-column:span 2}
+  .about .wrap,.cta .wrap{grid-template-columns:1fr;gap:48px}
+  .about-media{max-width:560px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-brand{grid-column:span 2}
+}
+/* mobile */
+@media (max-width:760px){
+  body{font-size:15.5px;padding-bottom:70px}
+  section{padding:56px 0}
+  .wrap{width:min(1180px,100% - 32px)}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .topbar .hide-m{display:none}
+  .burger{display:block}
+  .nav ul{position:fixed;inset:76px 0 auto 0;background:var(--cream);flex-direction:column;gap:0;padding:8px 20px 24px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.35s;box-shadow:0 20px 30px -20px rgba(0,0,0,.3);align-items:stretch}
+  .nav ul.open{transform:none}
+  .nav ul li a{display:block;padding:15px 4px;border-bottom:1px solid var(--line);font-size:1.02rem}
+  .nav ul li:last-child a{border:0;margin-top:14px;text-align:center}
+  .nav .btn-nav{display:none}
+  .hero{padding:44px 0 70px}
+  .hero-cta .btn{width:100%}
+  .hero-trust{gap:20px}
+  .hero-trust b{font-size:1.55rem}
+  .f1{left:-6px;bottom:40px}
+  .f2{right:-4px;top:34px}
+  .float{padding:10px 14px;font-size:.78rem}
+  .svc-grid,.tgrid,.why-grid,.steps,.extras{grid-template-columns:1fr}
+  .tcard.big{grid-column:auto}
+  .sec-head{margin-bottom:32px}
+  .ticks{grid-template-columns:1fr}
+  .badge{right:8px;bottom:-18px;padding:14px 18px}
+  .badge b{font-size:2rem}
+  .offer{padding:30px 24px}
+  .offer .btn{width:100%}
+  .cta .wrap{padding:60px 0}
+  .form{padding:26px 20px}
+  .form .row{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr;gap:30px}
+  .f-brand{grid-column:auto}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 14px;gap:10px;box-shadow:0 -10px 30px -15px rgba(0,0,0,.25)}
+  .mbar a{flex:1;text-align:center;padding:13px 10px;border-radius:999px;font-weight:700;font-size:.95rem}
+  .mbar .c{background:var(--aqua);color:var(--teal-dark)}
+  .mbar .q{background:var(--gold);color:var(--ink)}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 Proudly serving <b>Sylvan Lake, AB</b> and area since 2009</span>
+    <span class="hide-m">Licensed &amp; bonded · Home and office</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="MAID to Shine home">
+      <img src="images/logo.png" alt="MAID to Shine logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <span class="logo-mark" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="#f5b82e"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z"/></svg></span>
+      <span class="logo-text">MAID to Shine<small>Sylvan Lake, AB</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#quote" class="btn btn-teal btn-nav" style="color:#fff;padding:12px 24px">Get a Free Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><i>★★★★★</i> Trusted by Sylvan Lake families for 14+ years</span>
+      <h1>Neat as can be, <em>clean you can see.</em></h1>
+      <p class="lead">Licensed and bonded house and office cleaning in Sylvan Lake. Clear communication, careful hands and a free re-clean within 24 hours if anything is missed.</p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-gold">Get a Free Quote</a>
+        <a href="#services" class="btn btn-ghost">See Our Services</a>
+      </div>
+      <div class="hero-trust">
+        <div><b>2009</b>Serving since</div>
+        <div><b>100%</b>Satisfaction guarantee</div>
+        <div><b>5%</b>Of profits to local charities</div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="ph">
+        <img src="images/hero.jpg" alt="Bright, spotless living room cleaned by MAID to Shine" onerror="this.remove()">
+      </div>
+      <div class="float f1"><span class="ic">🛡️</span><div><b>Licensed &amp; Bonded</b>Confidentiality signed</div></div>
+      <div class="float f2"><span class="ic">🏆</span><div><b>Award Winning</b>Best of Sylvan</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<div class="awards">
+  <div class="wrap">
+    <span class="lbl">Community recognised</span>
+    <span><i>🥇</i> 2020 Gold Winner</span>
+    <span><i>🥇</i> 2021 Gold Winner</span>
+    <span><i>🏅</i> 2022 Best of Sylvan</span>
+    <span><i>🏆</i> 2023 Winner</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What We Do</span>
+      <h2>Every kind of clean, one dependable team</h2>
+      <p>From a weekly tidy to a full move out, we match the service to your space and your schedule.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-house-cleaning.jpg" alt="Cleaner wiping a kitchen counter in a bright home" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Most popular</span>
+          <h3>Weekly, Biweekly &amp; Monthly House Cleaning</h3>
+          <p>Reliable, on-time cleaning that keeps your home fresh all year. Professional, efficient and never rushed.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-move-out.jpg" alt="Empty, freshly cleaned room ready for move in" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Always prepared</span>
+          <h3>Move In &amp; Move Out Cleans</h3>
+          <p>A top to bottom clean for the home you are leaving or the one you are about to fill. Every nook and cranny.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-office.jpg" alt="Clean modern office with tidy desks" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Commercial</span>
+          <h3>Office Cleaning</h3>
+          <p>Top to bottom cleaning that leaves your workplace sparkling and ready for the next business day.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-airbnb.jpg" alt="Freshly made bed in a vacation rental" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Hosts</span>
+          <h3>Airbnb Cleaning</h3>
+          <p>Have an Airbnb that needs cleaning? We help you earn that "Sparkling Clean" rating, guest after guest.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-carpet.jpg" alt="Freshly cleaned carpet in a living room" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Finishing touch</span>
+          <h3>Carpet Cleaning</h3>
+          <p>Too tired or too busy to tackle your carpets? Moving in or out? Give us a call and we will handle it.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+      <article class="svc rv">
+        <div class="ph"><img src="images/service-organizing.jpg" alt="Neatly organized pantry shelves" loading="lazy" onerror="this.remove()"></div>
+        <div class="body">
+          <span class="tag">Attention to detail</span>
+          <h3>Professional Organizing</h3>
+          <p>We love to organize. Let us help with your cupboards, closets, garage or any room that needs a reset.</p>
+          <a class="more" href="#quote">Book this service →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="extras">
+      <div class="extra rv">
+        <span class="ic">🏡</span>
+        <div><h3>Home Checks</h3><p>Snowbird or heading on vacation? Enjoy peace of mind while you are away.</p></div>
+      </div>
+      <div class="extra rv">
+        <span class="ic">🛍️</span>
+        <div><h3>Personal Shopping</h3><p>Too tired or short on time to shop? Leave it with us, always willing to help.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<div class="hero-offer">
+  <div class="wrap">
+    <div class="offer rv">
+      <div>
+        <h3>🎖️ First responder and military discounts</h3>
+        <p>Military, veterans, police officers, fire fighters, and retired police and fire fighters. Thank you for the work you do every day. Ask about your special discount.</p>
+      </div>
+      <a href="#quote" class="btn btn-teal">Claim My Discount</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Why MAID to Shine</span>
+      <h2>Cleaning you can trust in your home</h2>
+      <p>Three promises that sit behind every visit.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <span class="ic">✅</span>
+        <h3>100% Satisfaction Guaranteed</h3>
+        <p>If you are unhappy or something was missed, we come back and clean it for free within 24 hours. No questions asked.</p>
+      </div>
+      <div class="why-card rv">
+        <span class="ic">🔒</span>
+        <h3>Your Privacy Comes First</h3>
+        <p>Before we enter any home or office, you receive a confidentiality agreement signed by each professional cleaner.</p>
+      </div>
+      <div class="why-card rv">
+        <span class="ic">💛</span>
+        <h3>We Support Local Charities</h3>
+        <p>5% of all profits go back into the community, including the Sylvan Lake Christmas Bureau, Food Bank and Victim Services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-media rv">
+      <div class="ph"><img src="images/about-lara.jpg" alt="MAID to Shine cleaner smiling in a bright kitchen" loading="lazy" onerror="this.remove()"></div>
+      <div class="badge"><b>14+</b>years in<br>Sylvan Lake</div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">About Us</span>
+      <h2>A local business built on clear communication</h2>
+      <p>Since opening our doors in 2009, we have focused on high quality service, working efficiently and keeping the lines of communication with every client clear and simple.</p>
+      <p>Our mission is straightforward: deliver excellent cleaning in a timely manner, tailored to what each project needs. We want to be the first choice cleaning provider for the families and businesses we serve.</p>
+      <ul class="ticks">
+        <li>Dependable, reliable and committed</li>
+        <li>Honest, efficient and motivated</li>
+        <li>Licensed and bonded</li>
+        <li>Home or office</li>
+      </ul>
+      <a href="#quote" class="btn btn-teal">Talk to Us Today</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head center rv" style="text-align:center">
+      <span class="eyebrow">Simple Process</span>
+      <h2>Getting a spotless space takes three steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Tell us what you need</h3><p>Send a quick request or give us a call. Share your space, your timing and any special needs.</p></div>
+      <div class="step rv"><h3>We clean with care</h3><p>Your professional, confidentiality-signed cleaner arrives at the arranged time and gets to work.</p></div>
+      <div class="step rv"><h3>Enjoy the shine</h3><p>Walk into a spotless space. If anything was missed, we return within 24 hours, free.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What They're Saying</span>
+      <h2>Kind words from our neighbours</h2>
+      <p>Real feedback from Sylvan Lake clients.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard big rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Went above and beyond"</h3>
+        <p>I hired Lara and her amazing team to do a move in clean for my family. Our place was not in move in condition, but Lara went above and beyond so we felt comfortable bringing our toddler home. Her communication was amazing, and every nook and cranny was tended to. 10/10 recommended!</p>
+        <div class="who"><i>A</i>Alexandra L.</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Glad we found Lara!"</h3>
+        <p>Lara comes at the arranged time, is professional in her standards and offers other services like organizing. Great, reliable service!</p>
+        <div class="who"><i>D</i>Deanne Fairfield</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Top notch"</h3>
+        <p>Top-notch service for a fair price. You can tell when someone takes pride in her work!</p>
+        <div class="who"><i>L</i>Lois Habberfield</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Amazing attention to detail"</h3>
+        <p>Excellent, reliable service, very fast and efficient. Always makes sure the job is done right and leaves everything spotless.</p>
+        <div class="who"><i>C</i>Crystal Thompson</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"5 out of 5"</h3>
+        <p>The house sparkles and the floors are shiny. She even got all the hard water stains off. My bathrooms have never looked this good!</p>
+        <div class="who"><i>T</i>Teresa Rilling</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Takes pride in her work"</h3>
+        <p>Lara has been cleaning my home for close to 8 years. She even squeezed me in for a last minute move out clean and worked into the evening to finish.</p>
+        <div class="who"><i>L</i>Lisa A.</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"Very professional"</h3>
+        <p>Every clean feels like a deep clean. She is able to do the work of two people in a fraction of the time. Worth every dollar.</p>
+        <div class="who"><i>M</i>Matthew S.</div>
+      </div>
+      <div class="tcard rv">
+        <div class="stars">★★★★★</div>
+        <h3>"So clean, so awesome!"</h3>
+        <p>Very professional and thorough. She also organized our pantry. The house has now become our home.</p>
+        <div class="who"><i>P</i>Peter Brown</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FORM -->
+<section class="cta" id="quote">
+  <div class="bg"><img src="images/cta-bg.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow" style="color:var(--gold)">Get in Touch</span>
+      <h2>Ready for a home that shines?</h2>
+      <p>Tell us a little about your space and we will get back to you with a free, no pressure quote.</p>
+      <ul class="contact-list">
+        <li><span class="ic">📞</span><a href="tel:+14030000000" id="phone">Call or text us</a></li>
+        <li><span class="ic">✉️</span><a href="mailto:info@maidshine.net">info@maidshine.net</a></li>
+        <li><span class="ic">📍</span>Sylvan Lake, AB and surrounding area</li>
+        <li><span class="ic">👍</span><a href="#" rel="noopener">Find us on Facebook</a></li>
+      </ul>
+    </div>
+    <form class="form rv" id="quoteForm" action="#" method="post">
+      <h3>Request a free quote</h3>
+      <p class="sub">We reply as soon as we can.</p>
+      <div class="row">
+        <div><label for="n">Your name</label><input id="n" name="name" required autocomplete="name"></div>
+        <div><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <label for="e">Email</label>
+      <input id="e" name="email" type="email" required autocomplete="email">
+      <label for="s">Service needed</label>
+      <select id="s" name="service">
+        <option>House cleaning (weekly, biweekly, monthly)</option>
+        <option>Move in / move out clean</option>
+        <option>Office cleaning</option>
+        <option>Airbnb cleaning</option>
+        <option>Carpet cleaning</option>
+        <option>Organizing</option>
+        <option>Home checks</option>
+        <option>Personal shopping</option>
+      </select>
+      <label for="m">Message</label>
+      <textarea id="m" name="message" placeholder="Tell us about your space and preferred dates"></textarea>
+      <button class="btn btn-gold" type="submit">Send My Request</button>
+      <div class="ok" id="ok">Thank you! We will be in touch shortly.</div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <div class="logo-text">MAID to Shine</div>
+        <p>Licensed and bonded house and office cleaning, serving Sylvan Lake and area since 2009. Neat as can be, clean you can see.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">House Cleaning</a></li>
+          <li><a href="#services">Move In / Move Out</a></li>
+          <li><a href="#services">Office Cleaning</a></li>
+          <li><a href="#services">Airbnb Cleaning</a></li>
+          <li><a href="#services">Organizing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why">Our Guarantee</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#quote">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> MAID to Shine. All rights reserved.</span>
+      <span>Sylvan Lake, Alberta</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+14030000000">📞 Call</a>
+  <a class="q" href="#quote">Free Quote</a>
+</div>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}));
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').style.display='block';e.target.reset()});
+</script>
+</body>
+</html>
